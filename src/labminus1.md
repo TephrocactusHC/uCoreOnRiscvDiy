@@ -38,6 +38,6 @@
 ## 如何自行解决问题
 建议，逐字逐句，逐个比特阅读下面两个文档。
 
-[How-To-Ask-Questions-The-Smart-Way](https://github.com/ryanhanwu/)
+[How To Ask Questions The Smart Way](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)
 
-[How-To-Ask-Questions-The-Smart-Way](https://github.com/ryanhanwu/)
+[Stop Ask Questions The Stupid Ways Public](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways)
