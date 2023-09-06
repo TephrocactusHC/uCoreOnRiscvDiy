@@ -76,7 +76,6 @@ then,make gdb again!
 
 FINISHI!
 
-
 ## question
 实验指导书里有这样两条命令
 ```
