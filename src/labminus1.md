@@ -1,5 +1,5 @@
 # lab负一
-如果会配环境，请直接跳过这个lab。
+如果会配环境，请直接跳过正文部分，直接看本章最后“如何自行解决问题”。
 
 ## 进入正文
 很好，恭喜大家来到这个本来只有文科生才会需要的lab负一。
@@ -41,3 +41,5 @@
 [How To Ask Questions The Smart Way](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)
 
 [Stop Ask Questions The Stupid Ways Public](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways)
+
+还有问题咋办？问一下gpt，问一下百度、谷歌，这么多问题我都能在csdn和github issue里面搜到，相信你们也可以
