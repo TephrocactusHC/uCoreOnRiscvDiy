@@ -9,8 +9,6 @@ you should
 make debug
 ```
 
-between make qemu and make gdb
-
 ![lab0-7](./lab0-7.png)
 
 then
