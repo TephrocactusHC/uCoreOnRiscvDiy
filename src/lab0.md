@@ -82,3 +82,46 @@ then,make gdb again!
 
 FINISHI!
 
+
+## question
+实验指导书里有这样两条命令
+```
+$qemu-system-riscv64 \
+-machine virt \
+-nographic \
+-bios default \
+-device loader,file=$(UCOREIMG),addr=0x80200000\
+-s -S
+```
+
+```
+riscv64-unknown-elf-gdb \
+-ex 'file bin/kernel' \
+-ex 'set arch riscv:rv64' \
+-ex 'target remote localhost:1234'
+```
+直接运行为什么会报错？
+```
+UCOREIMG:未找到命令
+```
+### ANSWER:
+1. 你没有执行make，这时候那个ucoreimg都没有，自然不会成功。先make，这时候在bin下面会有ucoreimg
+
+2. make了，还是不行。很简单，$(UCOREIMG)是个变量，你在shell里运行，shell会找这个变量。
+
+shell的变量会存在诸如：/etc/environment、.bashrc等地方，你在shell之中输入env可以看见所有shell能找到的变量。
+
+
+可是shell里没这个东西啊，没人定义，自然就报错了
+
+那么，实验指导书里这两个命令在哪呢？
+
+在makefile里
+
+[lab0-4.png](./lab0-4.png)
+
+ucoreimg也在这里被定义了
+
+[lab0-4.png](./lab0-4.png)
+
+到此，解释了我们上面为什么运行make qemu和make gdb而不是实验指导书里那几个很长的命令的原因了
