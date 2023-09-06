@@ -6,6 +6,17 @@
 
 
 关于配置环境，我录了一个视频。我所使用的是UBUNTU22，具体设置如下
+
+[6.828 ref](https://blog.csdn.net/zzzlueng/article/details/115277245)
+
+```
+sudo apt install libsdl1.2-dev
+sudo apt install libtool-bin
+sudo apt install libglib2.0-dev
+sudo apt install libz-dev
+sudo apt install libpixman-1-dev
+```
+
 ![0-0](./lab0-0.png)
 # START
 在上面的视频之中，可能有人发现了问题，下面这句话当你退出当前的shell之后会失效。因此你需要把这句话也设置为环境变量，比如写入.bashrc
