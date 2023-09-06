@@ -1,12 +1,4 @@
 # First of All!
-
-<video id="video" controls="" preload="none">
-    <source id="mp4" src="./环境配置.mp4" type="video/mp4">
-</video>
-
-
-关于配置环境，我录了一个视频。我所使用的是UBUNTU22，具体设置如下
-
 [6.828 ref](https://blog.csdn.net/zzzlueng/article/details/115277245)
 
 ```
@@ -16,6 +8,8 @@ sudo apt install libglib2.0-dev
 sudo apt install libz-dev
 sudo apt install libpixman-1-dev
 ```
+
+关于配置环境，我录了一个[视频](http://oslab.mobisys.cc/labvideo/%E5%AE%9E%E9%AA%8C%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AEby%E5%8A%A9%E6%95%99%E5%B0%8F%E6%9C%A8%402023.mp4)。我所使用的是UBUNTU22，具体设置如下
 
 ![0-0](./lab0-0.png)
 # START
@@ -122,6 +116,6 @@ shell的变量会存在诸如：/etc/environment、.bashrc等地方，你在shel
 
 ucoreimg也在这里被定义了
 
-[lab0-4.png](./lab0-4.png)
+[lab0-5.png](./lab0-5.png)
 
 到此，解释了我们上面为什么运行make qemu和make gdb而不是实验指导书里那几个很长的命令的原因了
