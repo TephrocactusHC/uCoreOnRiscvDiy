@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>lab负一 - uCore on risc-v</title>
+        <title>lab0.5 - uCore on risc-v</title>
 
 
         <!-- Custom HTML head -->
@@ -85,7 +85,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">ABOUT</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="labminus1.html" class="active"><strong aria-hidden="true">1.</strong> lab负一</a></li><li class="chapter-item expanded "><a href="lab0.html"><strong aria-hidden="true">2.</strong> lab0</a></li><li class="chapter-item expanded "><a href="lab0-5.html"><strong aria-hidden="true">3.</strong> lab0.5</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">ABOUT</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="labminus1.html"><strong aria-hidden="true">1.</strong> lab负一</a></li><li class="chapter-item expanded "><a href="lab0.html"><strong aria-hidden="true">2.</strong> lab0</a></li><li class="chapter-item expanded "><a href="lab0-5.html" class="active"><strong aria-hidden="true">3.</strong> lab0.5</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -171,46 +171,27 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="lab负一"><a class="header" href="#lab负一">lab负一</a></h1>
-<p>如果会配环境，请直接跳过正文部分，直接看本章最后“如何自行解决问题”。</p>
-<h2 id="进入正文"><a class="header" href="#进入正文">进入正文</a></h2>
-<p>很好，恭喜大家来到这个本来只有文科生才会需要的lab负一。</p>
-<h2 id="如何选择你的环境"><a class="header" href="#如何选择你的环境">如何选择你的环境</a></h2>
-<p><strong>在不会linux命令行的情况下，别挑战自己用 wsl 了。“没那个能力知道吧！”</strong></p>
-<p>因此在此推荐<code>vmware</code>+<code>ubuntu22</code></p>
-<h3 id="vmware"><a class="header" href="#vmware">vmware</a></h3>
-<p>首先，你需要一个17，pro。一定要用pro！<strong>好处在于可以有快照。</strong></p>
-<p>从哪下载？自己csdn搜。</p>
-<h3 id="ubuntu22"><a class="header" href="#ubuntu22">ubuntu22</a></h3>
-<p>直接百度ubuntu，然后进入官网下载。</p>
-<p>你说用ubuntu14 16 18行不行？不知道，我没试过。。。</p>
-<h3 id="如何设置你的虚拟机"><a class="header" href="#如何设置你的虚拟机">如何设置你的虚拟机</a></h3>
-<p>本质上，只要不蓝屏，你内存越大越好，磁盘越大越好，核数越多越好。总之拉满没坏处。</p>
-<h3 id="要不要开虚拟化"><a class="header" href="#要不要开虚拟化">要不要开虚拟化</a></h3>
-<p>虚拟化开了以后你的虚拟机会变得流畅，这时候ubuntu终于有1%的win7手感了。</p>
-<p><strong>注意，vmware开启虚拟化会和windows自己的虚拟化冲突，解决这一过程较为繁琐而且容易把自己电脑搞坏了，不会就算了。</strong></p>
-<h3 id="如何安装"><a class="header" href="#如何安装">如何安装</a></h3>
-<p>自己百度，csdn上这种文章有很多。</p>
-<p>简而言之，选好系统和磁盘位置，一路默认下来，基本上不会有什么问题。</p>
-<h3 id="装上之后应该做什么"><a class="header" href="#装上之后应该做什么">装上之后应该做什么？</a></h3>
-<p>先做个快照！千万别反复安装虚拟机。。。</p>
-<h2 id="如何自行解决问题"><a class="header" href="#如何自行解决问题">如何自行解决问题</a></h2>
-<p>建议，逐字逐句，逐个比特阅读下面两个文档。</p>
-<p><a href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way">How To Ask Questions The Smart Way</a></p>
-<p><a href="https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways">Stop Ask Questions The Stupid Ways Public</a></p>
-<p>还有问题咋办？问一下gpt，问一下百度、谷歌，这么多问题我都能在csdn和github issue里面搜到，相信你们也可以</p>
+                        <h1 id="lab05"><a class="header" href="#lab05">lab0.5</a></h1>
+<h2 id="note"><a class="header" href="#note">NOTE</a></h2>
+<p>lab0 is not over,bucause you could find that make gdb connect time out!</p>
+<p><img src="./lab0-3.png" alt="lab0-3" /></p>
+<p>you should </p>
+<pre><code>make debug
+</code></pre>
+<p>between make qemu and make gdb</p>
+<p><img src="./lab0-7.png" alt="lab0-7" /></p>
+<p>then</p>
+<p><img src="./lab0-6.png" alt="lab0-6" /></p>
+<p>Now you can start lab0.5!</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="lab0.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="lab0.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -218,13 +199,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="lab0.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="lab0.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
             </nav>
 
         </div>
