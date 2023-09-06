@@ -112,10 +112,10 @@ shell的变量会存在诸如：/etc/environment、.bashrc等地方，你在shel
 
 在makefile里
 
-[lab0-4.png](./lab0-4.png)
+![lab0-4.png](./lab0-4.png)
 
 ucoreimg也在这里被定义了
 
-[lab0-5.png](./lab0-5.png)
+![lab0-5.png](./lab0-5.png)
 
 到此，解释了我们上面为什么运行make qemu和make gdb而不是实验指导书里那几个很长的命令的原因了
