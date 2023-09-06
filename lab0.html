@@ -85,7 +85,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">ABOUT</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="lab0.html" class="active"><strong aria-hidden="true">1.</strong> lab0</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">ABOUT</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="labminus1.html"><strong aria-hidden="true">1.</strong> lab负一</a></li><li class="chapter-item expanded "><a href="lab0.html" class="active"><strong aria-hidden="true">2.</strong> lab0</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -178,6 +178,10 @@
 <p>关于配置环境，我录了一个视频。我所使用的是UBUNTU22，具体设置如下
 <img src="./lab0-0.png" alt="0-0" /></p>
 <h1 id="start"><a class="header" href="#start">START</a></h1>
+<p>在上面的视频之中，可能有人发现了问题，下面这句话当你退出当前的shell之后会失效。因此你需要把这句话也设置为环境变量，比如写入.bashrc</p>
+<pre><code>export PATH=$PWD/riscv32-softmmu:$PWD/riscv64-softmmu:$PATH
+</code></pre>
+<p>START!</p>
 <pre><code>cd lab0
 make
 </code></pre>
@@ -214,12 +218,13 @@ make: *** [Makefile:177: gdb] Error 127
 <p><a href="https://stackoverflow.com/questions/26597527/how-to-install-libpython2-7-so">ref</a></p>
 <p>then,make gdb again!</p>
 <p><img src="./lab0-3.png" alt="lab0-3" /></p>
+<p>FINISHI!</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="labminus1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
@@ -230,7 +235,7 @@ make: *** [Makefile:177: gdb] Error 127
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="labminus1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
