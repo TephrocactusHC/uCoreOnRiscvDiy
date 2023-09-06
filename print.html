@@ -204,10 +204,6 @@
 <p><a href="https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways">Stop Ask Questions The Stupid Ways Public</a></p>
 <p>还有问题咋办？问一下gpt，问一下百度、谷歌，这么多问题我都能在csdn和github issue里面搜到，相信你们也可以</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="first-of-all"><a class="header" href="#first-of-all">First of All!</a></h1>
-<video id="video" controls="" preload="none">
-    <source id="mp4" src="./环境配置.mp4" type="video/mp4">
-</video>
-<p>关于配置环境，我录了一个视频。我所使用的是UBUNTU22，具体设置如下</p>
 <p><a href="https://blog.csdn.net/zzzlueng/article/details/115277245">6.828 ref</a></p>
 <pre><code>sudo apt install libsdl1.2-dev
 sudo apt install libtool-bin
@@ -215,6 +211,7 @@ sudo apt install libglib2.0-dev
 sudo apt install libz-dev
 sudo apt install libpixman-1-dev
 </code></pre>
+<p>关于配置环境，我录了一个<a href="http://oslab.mobisys.cc/labvideo/%E5%AE%9E%E9%AA%8C%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AEby%E5%8A%A9%E6%95%99%E5%B0%8F%E6%9C%A8%402023.mp4">视频</a>。我所使用的是UBUNTU22，具体设置如下</p>
 <p><img src="./lab0-0.png" alt="0-0" /></p>
 <h1 id="start"><a class="header" href="#start">START</a></h1>
 <p>在上面的视频之中，可能有人发现了问题，下面这句话当你退出当前的shell之后会失效。因此你需要把这句话也设置为环境变量，比如写入.bashrc</p>
@@ -288,9 +285,9 @@ make: *** [Makefile:177: gdb] Error 127
 <p>可是shell里没这个东西啊，没人定义，自然就报错了</p>
 <p>那么，实验指导书里这两个命令在哪呢？</p>
 <p>在makefile里</p>
-<p><a href="./lab0-4.png">lab0-4.png</a></p>
+<p><img src="./lab0-4.png" alt="lab0-4.png" /></p>
 <p>ucoreimg也在这里被定义了</p>
-<p><a href="./lab0-4.png">lab0-4.png</a></p>
+<p><img src="./lab0-5.png" alt="lab0-5.png" /></p>
 <p>到此，解释了我们上面为什么运行make qemu和make gdb而不是实验指导书里那几个很长的命令的原因了</p>
 
                     </main>
