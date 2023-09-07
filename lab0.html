@@ -182,7 +182,7 @@ sudo apt install libpixman-1-dev
 <p>关于配置环境，我录了一个<a href="http://oslab.mobisys.cc/labvideo/%E5%AE%9E%E9%AA%8C%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AEby%E5%8A%A9%E6%95%99%E5%B0%8F%E6%9C%A8%402023.mp4">视频</a>。我所使用的是UBUNTU22，具体设置如下</p>
 <p><img src="./lab0-0.png" alt="0-0" /></p>
 <h1 id="start"><a class="header" href="#start">START</a></h1>
-<p>在上面的视频之中，可能有人发现了问题，下面这句话当你退出当前的shell之后会失效。因此你需要把这句话也设置为环境变量，比如写入.bashrc</p>
+<p>在上面的视频之中，可能有人发现了问题，下面这句话当你退出当前的shell之后会失效。因此你需要把这句话也设置为环境变量，比如写入.bashrc(也许你需要把pwd改成你安装的路径)</p>
 <pre><code>export PATH=$PWD/riscv32-softmmu:$PWD/riscv64-softmmu:$PATH
 </code></pre>
 <p>START!</p>
