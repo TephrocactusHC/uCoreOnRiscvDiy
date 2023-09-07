@@ -13,7 +13,7 @@ sudo apt install libpixman-1-dev
 
 ![0-0](./lab0-0.png)
 # START
-在上面的视频之中，可能有人发现了问题，下面这句话当你退出当前的shell之后会失效。因此你需要把这句话也设置为环境变量，比如写入.bashrc
+在上面的视频之中，可能有人发现了问题，下面这句话当你退出当前的shell之后会失效。因此你需要把这句话也设置为环境变量，比如写入.bashrc(也许你需要把pwd改成你安装的路径)
 ```
 export PATH=$PWD/riscv32-softmmu:$PWD/riscv64-softmmu:$PATH
 ```
