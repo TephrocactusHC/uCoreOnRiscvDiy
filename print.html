@@ -86,7 +86,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">ABOUT</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="labminus1.html"><strong aria-hidden="true">1.</strong> lab负一</a></li><li class="chapter-item expanded "><a href="lab0.html"><strong aria-hidden="true">2.</strong> lab0</a></li><li class="chapter-item expanded "><a href="lab0-5.html"><strong aria-hidden="true">3.</strong> lab0.5</a></li><li class="chapter-item expanded "><a href="lab1.html"><strong aria-hidden="true">4.</strong> lab1</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">ABOUT</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="labminus1.html"><strong aria-hidden="true">1.</strong> lab负一</a></li><li class="chapter-item expanded "><a href="lab0.html"><strong aria-hidden="true">2.</strong> lab0</a></li><li class="chapter-item expanded "><a href="lab0-5.html"><strong aria-hidden="true">3.</strong> lab0.5</a></li><li class="chapter-item expanded "><a href="lab1.html"><strong aria-hidden="true">4.</strong> lab1</a></li><li class="chapter-item expanded "><a href="lab2.html"><strong aria-hidden="true">5.</strong> lab2</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -319,6 +319,37 @@ make: *** [Makefile:177: gdb] Error 127
 <h2 id="about-challenge"><a class="header" href="#about-challenge">About challenge</a></h2>
 <p>Very easy…</p>
 <p>I think EVERYONE should complete it!</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab2"><a class="header" href="#lab2">lab2</a></h1>
+<p>todo</p>
+<h2 id="buddy"><a class="header" href="#buddy">buddy</a></h2>
+<p><strong>Notice: 必须有足够充足的测试样例，来体现buddy的各种情况。</strong></p>
+<p>当年我写这个玩意儿的时候自己设计的样例（贼拉跨，仅供娱乐，不能供参考）:</p>
+<pre><code>首先申请 p0 p1 p2 p3
+其大小为 70 35 257 63
+
+从前向后分配的块以及其大小 |128(64+64)|64|64|256(128+128)|512|
+其对应的页                |p0        |p1|p3|空          |p2 |
+
+然后释放p1\p3
+
+这时候p1和p3的块应该合并
+
+再释放p0
+
+这时候前512个页已经空了,需要展示合并后的结果
+
+然后我们申请 p4 p5
+其大小为     255 255
+
+那么这时候系统的内存空间是这样的
+|256|256|512|
+|p4 |p5 |p2 | 
+
+最后释放。
+</code></pre>
+<p>重点是展示各种分配和合并的状态。可以设计更加复杂的样例来充分体现</p>
+<h2 id="slub"><a class="header" href="#slub">slub</a></h2>
+<p>todo</p>
 
                     </main>
 
